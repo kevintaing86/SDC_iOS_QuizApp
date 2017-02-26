@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A135CA801E62C8F600FD649C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A135CA7F1E62C8F600FD649C /* Login.storyboard */; };
+		A135CA841E62C91100FD649C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A135CA831E62C91100FD649C /* Home.storyboard */; };
+		A135CA861E62C91800FD649C /* Practice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A135CA851E62C91800FD649C /* Practice.storyboard */; };
 		A18574491E5F38A300B92F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18574481E5F38A300B92F12 /* AppDelegate.swift */; };
 		A18574501E5F38A300B92F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A185744F1E5F38A300B92F12 /* Assets.xcassets */; };
 		A18574531E5F38A300B92F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18574511E5F38A300B92F12 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A135CA7F1E62C8F600FD649C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A135CA831E62C91100FD649C /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		A135CA851E62C91800FD649C /* Practice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Practice.storyboard; sourceTree = "<group>"; };
 		A18574451E5F38A300B92F12 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18574481E5F38A300B92F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A185744F1E5F38A300B92F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +37,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A135CA7D1E62C8BB00FD649C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A135CA7F1E62C8F600FD649C /* Login.storyboard */,
+				A135CA831E62C91100FD649C /* Home.storyboard */,
+				A135CA851E62C91800FD649C /* Practice.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		A135CA7E1E62C8CD00FD649C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		A185743C1E5F38A200B92F12 = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +73,8 @@
 		A18574471E5F38A300B92F12 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				A135CA7E1E62C8CD00FD649C /* Controllers */,
+				A135CA7D1E62C8BB00FD649C /* Storyboards */,
 				A18574481E5F38A300B92F12 /* AppDelegate.swift */,
 				A185744F1E5F38A300B92F12 /* Assets.xcassets */,
 				A18574511E5F38A300B92F12 /* LaunchScreen.storyboard */,
@@ -117,8 +142,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A135CA861E62C91800FD649C /* Practice.storyboard in Resources */,
 				A18574531E5F38A300B92F12 /* LaunchScreen.storyboard in Resources */,
 				A18574501E5F38A300B92F12 /* Assets.xcassets in Resources */,
+				A135CA801E62C8F600FD649C /* Login.storyboard in Resources */,
+				A135CA841E62C91100FD649C /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +311,7 @@
 				A18574591E5F38A300B92F12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

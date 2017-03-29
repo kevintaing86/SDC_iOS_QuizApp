@@ -9,20 +9,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HomeView-->
+        <!--HomeInitialView-->
         <scene sceneID="vb5-Nv-S5y">
             <objects>
-                <viewControllerPlaceholder storyboardName="HomeView" id="WHl-4X-jaL" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="HomeView" referencedIdentifier="HomeInitialView" id="WHl-4X-jaL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="vTK-aO-csR"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTm-xd-e4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="93" y="-166"/>
         </scene>
-        <!--Practice-->
+        <!--PracticeInitialView-->
         <scene sceneID="FAc-BQ-nik">
             <objects>
-                <viewControllerPlaceholder storyboardName="Practice" id="Tug-LV-cLW" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Practice" referencedIdentifier="PracticeInitialView" id="Tug-LV-cLW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Practice" id="n7B-D8-19C"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CpW-fT-QLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -39,15 +39,15 @@
             </objects>
             <point key="canvasLocation" x="137" y="33"/>
         </scene>
-        <!--Stats-->
+        <!--SettingsInitialView-->
         <scene sceneID="NC6-HG-5c7">
             <objects>
-                <viewControllerPlaceholder storyboardName="Stats" id="Va7-Gb-T12" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="SettingsInitialView" id="Va7-Gb-T12" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" id="Hez-C2-5uc"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9A6-34-X0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="70" y="123"/>
+            <point key="canvasLocation" x="104" y="123"/>
         </scene>
         <!--Home Navigation Controller-->
         <scene sceneID="Fum-vA-XHG">

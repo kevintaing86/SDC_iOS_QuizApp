@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F6D97931E67A2EF0048DA4D /* PracticeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6D97921E67A2EF0048DA4D /* PracticeScreenViewController.swift */; };
 		A135CA801E62C8F600FD649C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A135CA7F1E62C8F600FD649C /* Login.storyboard */; };
 		A135CA841E62C91100FD649C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A135CA831E62C91100FD649C /* Home.storyboard */; };
 		A135CA861E62C91800FD649C /* Practice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A135CA851E62C91800FD649C /* Practice.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F6D97921E67A2EF0048DA4D /* PracticeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeScreenViewController.swift; sourceTree = SOURCE_ROOT; };
 		A135CA7F1E62C8F600FD649C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A135CA831E62C91100FD649C /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A135CA851E62C91800FD649C /* Practice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Practice.storyboard; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 				A135CA7F1E62C8F600FD649C /* Login.storyboard */,
 				A135CA831E62C91100FD649C /* Home.storyboard */,
 				A135CA851E62C91800FD649C /* Practice.storyboard */,
+				2F6D97921E67A2EF0048DA4D /* PracticeScreenViewController.swift */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A18574491E5F38A300B92F12 /* AppDelegate.swift in Sources */,
+				2F6D97931E67A2EF0048DA4D /* PracticeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GyT-Vq-8hJ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -28,7 +28,8 @@
         <!--Practice-->
         <scene sceneID="EgP-Q9-7xz">
             <objects>
-                <viewController title="Practice" id="S1f-Xh-rtf" customClass="PracticeScreenViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWK-tM-9u9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="PracticeInitialView" title="Practice" id="S1f-Xh-rtf" customClass="PracticeScreenViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FBM-b2-ZPz"/>
                         <viewControllerLayoutGuide type="bottom" id="eAu-ik-hUI"/>
@@ -108,7 +109,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Practice" id="F7l-qK-glp"/>
+                    <navigationItem key="navigationItem" id="Q3q-rR-32W"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="english" destination="XeM-4a-zy9" id="cCs-at-7gl"/>
@@ -118,9 +119,8 @@
                         <outlet property="science" destination="VjM-uE-2EO" id="AMX-u0-yZC"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oWK-tM-9u9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-703.20000000000005" y="-178.56071964017991"/>
+            <point key="canvasLocation" x="236" y="-178.56071964017991"/>
         </scene>
         <!--Settings-->
         <scene sceneID="fWY-gW-fpY">
@@ -161,25 +161,24 @@
             </objects>
             <point key="canvasLocation" x="-223" y="1164"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="BUh-mB-TmJ">
+        <!--Practice-->
+        <scene sceneID="9cm-v8-Lpo">
             <objects>
-                <tabBarController id="EWO-RQ-LYp" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="XCp-7i-1hT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GyT-Vq-8hJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Practice" id="F7l-qK-glp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qvx-FN-0Jt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="yI6-6r-R2W" kind="relationship" relationship="viewControllers" id="p8N-Vu-lRa"/>
-                        <segue destination="TxM-Qz-hiJ" kind="relationship" relationship="viewControllers" id="g05-1d-X4X"/>
-                        <segue destination="S1f-Xh-rtf" kind="relationship" relationship="viewControllers" id="4cY-lD-1gG"/>
-                        <segue destination="JKY-kZ-Yse" kind="relationship" relationship="viewControllers" id="TNv-iq-4aU"/>
+                        <segue destination="S1f-Xh-rtf" kind="relationship" relationship="rootViewController" id="iaK-fb-sYE"/>
                     </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Mt-kr-4bT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d0N-3C-nA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1502" y="-177"/>
+            <point key="canvasLocation" x="-703.20000000000005" y="-178.56071964017991"/>
         </scene>
     </scenes>
 </document>

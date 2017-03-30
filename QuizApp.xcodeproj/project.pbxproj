@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F782B0E1E8C940B0080F688 /* PracticeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F782B0D1E8C940B0080F688 /* PracticeScreenViewController.swift */; };
 		A13188031E70ED450059D682 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13188021E70ED450059D682 /* HomeView.storyboard */; };
 		A13188051E70EE4B0059D682 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13188041E70EE4B0059D682 /* HomeNavigationController.swift */; };
 		A135CA801E62C8F600FD649C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A135CA7F1E62C8F600FD649C /* Login.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F782B0D1E8C940B0080F688 /* PracticeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeScreenViewController.swift; sourceTree = "<group>"; };
 		A13188021E70ED450059D682 /* HomeView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
 		A13188041E70EE4B0059D682 /* HomeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		A135CA7F1E62C8F600FD649C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				A13188041E70EE4B0059D682 /* HomeNavigationController.swift */,
+				2F782B0D1E8C940B0080F688 /* PracticeScreenViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A13188051E70EE4B0059D682 /* HomeNavigationController.swift in Sources */,
+				2F782B0E1E8C940B0080F688 /* PracticeScreenViewController.swift in Sources */,
 				A18574491E5F38A300B92F12 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuizApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KevinTaing.QuizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuizApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KevinTaing.QuizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

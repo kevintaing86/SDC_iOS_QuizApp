@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xhx-PV-tSp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xhx-PV-tSp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Ceg-uw-h4V">
             <objects>
-                <viewController id="Xhx-PV-tSp" sceneMemberID="viewController">
+                <viewController id="Xhx-PV-tSp" customClass="LoginViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qAM-qR-Wse"/>
                         <viewControllerLayoutGuide type="bottom" id="PrR-MZ-hjl"/>
@@ -51,6 +51,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="login:" destination="Xhx-PV-tSp" eventType="touchUpInside" id="9tF-y8-1Vw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yu-cg-hJf">
                                 <rect key="frame" x="116" y="581" width="153" height="36"/>
@@ -58,6 +61,9 @@
                                 <state key="normal" title="Forgot Password">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="forgotPassword:" destination="Xhx-PV-tSp" eventType="touchUpInside" id="XzI-1H-Qmv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1x-7C-o0r">
                                 <rect key="frame" x="94" y="537" width="195" height="36"/>
@@ -69,6 +75,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccount:" destination="Xhx-PV-tSp" eventType="touchUpInside" id="4zc-CH-uh9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.32549019610000002" green="0.46666666670000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,10 +97,14 @@
                             <constraint firstItem="eqg-S1-bgX" firstAttribute="top" secondItem="hPR-d9-H9Q" secondAttribute="bottom" constant="85" id="unH-oy-UYq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="4Rw-Sb-1Bx" id="EhU-sN-Ska"/>
+                        <outlet property="username" destination="eqg-S1-bgX" id="E3b-0n-we7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lv4-9I-r1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-82.400000000000006" y="31.934032983508249"/>
+            <point key="canvasLocation" x="73" y="25"/>
         </scene>
     </scenes>
 </document>

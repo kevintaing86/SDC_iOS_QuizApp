@@ -7,6 +7,6 @@ target 'QuizApp' do
 
   # Pods for QuizApp
 
-pod 'Firebase'
+pod ‘Firebase/Core’
 
 end

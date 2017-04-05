@@ -18,6 +18,7 @@
 		A18574501E5F38A300B92F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A185744F1E5F38A300B92F12 /* Assets.xcassets */; };
 		A18574531E5F38A300B92F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18574511E5F38A300B92F12 /* LaunchScreen.storyboard */; };
 		AC10E3B21E95B18A00497658 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10E3B11E95B18A00497658 /* LoginViewController.swift */; };
+		AC10E3B41E95B77600497658 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC10E3B31E95B77600497658 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		A18574521E5F38A300B92F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A18574541E5F38A300B92F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC10E3B11E95B18A00497658 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AC10E3B31E95B77600497658 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BA4E35BC4C0AAD05928B10F2 /* Pods-QuizApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuizApp/Pods-QuizApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 				A185744F1E5F38A300B92F12 /* Assets.xcassets */,
 				A18574511E5F38A300B92F12 /* LaunchScreen.storyboard */,
 				A18574541E5F38A300B92F12 /* Info.plist */,
+				AC10E3B31E95B77600497658 /* GoogleService-Info.plist */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A13188031E70ED450059D682 /* HomeView.storyboard in Resources */,
+				AC10E3B41E95B77600497658 /* GoogleService-Info.plist in Resources */,
 				A135CA861E62C91800FD649C /* Practice.storyboard in Resources */,
 				A18574531E5F38A300B92F12 /* LaunchScreen.storyboard in Resources */,
 				A18574501E5F38A300B92F12 /* Assets.xcassets in Resources */,

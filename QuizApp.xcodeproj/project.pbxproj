@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F782B0E1E8C940B0080F688 /* PracticeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F782B0D1E8C940B0080F688 /* PracticeScreenViewController.swift */; };
+		2FC889111E95B3D00031F7A1 /* NewAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC889101E95B3D00031F7A1 /* NewAccount.storyboard */; };
+		2FC889131E95B4030031F7A1 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC889121E95B4030031F7A1 /* NewAccountViewController.swift */; };
 		A13188031E70ED450059D682 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13188021E70ED450059D682 /* HomeView.storyboard */; };
 		A13188051E70EE4B0059D682 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13188041E70EE4B0059D682 /* HomeNavigationController.swift */; };
 		A135CA801E62C8F600FD649C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A135CA7F1E62C8F600FD649C /* Login.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		2F782B0D1E8C940B0080F688 /* PracticeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeScreenViewController.swift; sourceTree = "<group>"; };
+		2FC889101E95B3D00031F7A1 /* NewAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewAccount.storyboard; sourceTree = "<group>"; };
+		2FC889121E95B4030031F7A1 /* NewAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
 		A13188021E70ED450059D682 /* HomeView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
 		A13188041E70EE4B0059D682 /* HomeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		A135CA7F1E62C8F600FD649C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 				A135CA7F1E62C8F600FD649C /* Login.storyboard */,
 				A135CA831E62C91100FD649C /* HomeNavigation.storyboard */,
 				A135CA851E62C91800FD649C /* Practice.storyboard */,
+				2FC889101E95B3D00031F7A1 /* NewAccount.storyboard */,
 				A13188021E70ED450059D682 /* HomeView.storyboard */,
 				A163DFA31E8C767900F1CD59 /* Settings.storyboard */,
 			);
@@ -62,6 +67,7 @@
 			children = (
 				A13188041E70EE4B0059D682 /* HomeNavigationController.swift */,
 				2F782B0D1E8C940B0080F688 /* PracticeScreenViewController.swift */,
+				2FC889121E95B4030031F7A1 /* NewAccountViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -157,6 +163,7 @@
 				A13188031E70ED450059D682 /* HomeView.storyboard in Resources */,
 				A135CA861E62C91800FD649C /* Practice.storyboard in Resources */,
 				A18574531E5F38A300B92F12 /* LaunchScreen.storyboard in Resources */,
+				2FC889111E95B3D00031F7A1 /* NewAccount.storyboard in Resources */,
 				A18574501E5F38A300B92F12 /* Assets.xcassets in Resources */,
 				A163DFA41E8C767900F1CD59 /* Settings.storyboard in Resources */,
 				A135CA801E62C8F600FD649C /* Login.storyboard in Resources */,
@@ -174,6 +181,7 @@
 				A13188051E70EE4B0059D682 /* HomeNavigationController.swift in Sources */,
 				2F782B0E1E8C940B0080F688 /* PracticeScreenViewController.swift in Sources */,
 				A18574491E5F38A300B92F12 /* AppDelegate.swift in Sources */,
+				2FC889131E95B4030031F7A1 /* NewAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

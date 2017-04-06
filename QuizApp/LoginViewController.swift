@@ -8,13 +8,12 @@
 
 import Foundation
 import UIKit
-
+import Firebase
 
 class LoginViewController: UIViewController  {
     
-    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +28,22 @@ class LoginViewController: UIViewController  {
     
     @IBAction func login(_ sender: UIButton) {
         
+        FIRAuth.auth()?.signIn(withEmail: email.text!, password: password.text!) { (user, error) in
+            
+            if(user == nil) {
+                
+                print(error!)
+                
+            } else {
+                
+                print(user!)
+                
+                
+            }
+            
+            
+            
+        }
         
     }
     

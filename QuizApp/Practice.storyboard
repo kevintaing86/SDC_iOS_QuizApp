@@ -1,31 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1fJ-54-imS">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Wsd-w9-3tu">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="oPg-4G-wqV">
+        <!--Navigation Controller-->
+        <scene sceneID="IFb-hG-A9i">
             <objects>
-                <viewController storyboardIdentifier="PracticeInitialView" id="1fJ-54-imS" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="F7m-SW-2d1"/>
-                        <viewControllerLayoutGuide type="bottom" id="7kq-qc-p7D"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TxY-1B-aXf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hOy-YZ-aNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wsd-w9-3tu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h8k-na-y5E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Pi-hL-UVo" kind="relationship" relationship="rootViewController" id="2m8-cF-NVi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWM-FS-mHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-50" y="144"/>
+            <point key="canvasLocation" x="-50.399999999999999" y="143.47826086956522"/>
+        </scene>
+        <!--Practice-->
+        <scene sceneID="j6a-KG-yN4">
+            <objects>
+                <viewController storyboardIdentifier="PracticeInitialView" id="5Pi-hL-UVo" customClass="PracticeScreenViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zOh-7X-dhI"/>
+                        <viewControllerLayoutGuide type="bottom" id="1HJ-FV-tTi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fcx-7I-dTR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSz-m6-jIT">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Practice Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wu5-0E-RL8">
+                                        <rect key="frame" x="0.0" y="-64" width="375" height="113"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="113" id="fgc-JN-geg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQ3-ol-LkD">
+                                        <rect key="frame" x="0.0" y="121" width="375" height="60"/>
+                                        <color key="backgroundColor" red="0.64313725489999995" green="0.18039215689999999" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="5at-1e-eAo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
+                                        <state key="normal" title="Math">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8V-2B-RNx">
+                                        <rect key="frame" x="0.0" y="57" width="375" height="60"/>
+                                        <color key="backgroundColor" red="0.29411764709999999" green="0.1647058824" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ROm-Vf-rYn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
+                                        <state key="normal" title="English">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yP-Gb-l6R">
+                                        <rect key="frame" x="0.0" y="249" width="375" height="60"/>
+                                        <color key="backgroundColor" red="0.74901960779999999" green="0.36078431370000003" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="h4B-ZU-oKD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
+                                        <state key="normal" title="Science">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxn-Nq-j5L">
+                                        <rect key="frame" x="0.0" y="185" width="375" height="60"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.81568627449999997" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="riN-0O-l9d"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
+                                        <state key="normal" title="Random">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpn-zZ-JGb">
+                                        <rect key="frame" x="0.0" y="313" width="375" height="60"/>
+                                        <color key="backgroundColor" red="0.37647058820000001" green="0.46274509800000002" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.90000000000000002" height="1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="jOb-B5-fQ7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
+                                        <state key="normal" title="Others">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lpn-zZ-JGb" firstAttribute="leading" secondItem="fSz-m6-jIT" secondAttribute="leading" id="EvC-BB-Hvv"/>
+                                    <constraint firstItem="Lpn-zZ-JGb" firstAttribute="centerX" secondItem="fSz-m6-jIT" secondAttribute="centerX" id="GLb-DH-UOk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lpn-zZ-JGb" secondAttribute="trailing" id="I5Y-kV-OeS"/>
+                                    <constraint firstItem="xxn-Nq-j5L" firstAttribute="top" secondItem="hQ3-ol-LkD" secondAttribute="bottom" constant="4" id="IZf-t1-grE"/>
+                                    <constraint firstItem="0yP-Gb-l6R" firstAttribute="leading" secondItem="xxn-Nq-j5L" secondAttribute="leading" id="IbO-UJ-zbf"/>
+                                    <constraint firstItem="0yP-Gb-l6R" firstAttribute="trailing" secondItem="xxn-Nq-j5L" secondAttribute="trailing" id="L9u-rZ-3DB"/>
+                                    <constraint firstItem="Lpn-zZ-JGb" firstAttribute="leading" secondItem="0yP-Gb-l6R" secondAttribute="leading" id="Mr6-k6-Rlw"/>
+                                    <constraint firstItem="Lpn-zZ-JGb" firstAttribute="top" secondItem="0yP-Gb-l6R" secondAttribute="bottom" constant="4" id="QIN-Lc-Q6h"/>
+                                    <constraint firstItem="hQ3-ol-LkD" firstAttribute="trailing" secondItem="V8V-2B-RNx" secondAttribute="trailing" id="X1c-bG-o7r"/>
+                                    <constraint firstItem="Lpn-zZ-JGb" firstAttribute="trailing" secondItem="0yP-Gb-l6R" secondAttribute="trailing" id="ZYh-E5-v6z"/>
+                                    <constraint firstItem="xxn-Nq-j5L" firstAttribute="leading" secondItem="hQ3-ol-LkD" secondAttribute="leading" id="cQT-IQ-ZGZ"/>
+                                    <constraint firstItem="V8V-2B-RNx" firstAttribute="trailing" secondItem="wu5-0E-RL8" secondAttribute="trailing" id="eHv-lt-a1Q"/>
+                                    <constraint firstItem="xxn-Nq-j5L" firstAttribute="trailing" secondItem="hQ3-ol-LkD" secondAttribute="trailing" id="esI-0N-LPY"/>
+                                    <constraint firstAttribute="bottom" secondItem="wu5-0E-RL8" secondAttribute="bottom" constant="441" id="hxd-ug-0wW"/>
+                                    <constraint firstItem="0yP-Gb-l6R" firstAttribute="top" secondItem="xxn-Nq-j5L" secondAttribute="bottom" constant="4" id="q1X-yM-vRB"/>
+                                    <constraint firstItem="hQ3-ol-LkD" firstAttribute="top" secondItem="V8V-2B-RNx" secondAttribute="bottom" constant="4" id="qWz-R5-FMv"/>
+                                    <constraint firstItem="hQ3-ol-LkD" firstAttribute="leading" secondItem="V8V-2B-RNx" secondAttribute="leading" id="qjf-8z-WrA"/>
+                                    <constraint firstItem="V8V-2B-RNx" firstAttribute="top" secondItem="wu5-0E-RL8" secondAttribute="bottom" constant="8" symbolic="YES" id="td5-Ri-eBM"/>
+                                    <constraint firstItem="wu5-0E-RL8" firstAttribute="top" secondItem="fSz-m6-jIT" secondAttribute="top" id="uQX-8N-MhD"/>
+                                    <constraint firstItem="V8V-2B-RNx" firstAttribute="leading" secondItem="wu5-0E-RL8" secondAttribute="leading" id="vDH-te-oG3"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fSz-m6-jIT" firstAttribute="bottom" secondItem="1HJ-FV-tTi" secondAttribute="top" id="Vy3-lP-fi2"/>
+                            <constraint firstItem="fSz-m6-jIT" firstAttribute="top" secondItem="zOh-7X-dhI" secondAttribute="bottom" id="aXa-3l-y2p"/>
+                            <constraint firstAttribute="trailing" secondItem="fSz-m6-jIT" secondAttribute="trailing" id="ahw-mk-2go"/>
+                            <constraint firstItem="fSz-m6-jIT" firstAttribute="leading" secondItem="fcx-7I-dTR" secondAttribute="leading" id="fVl-2H-GnB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Practice" id="HoC-nW-Tad"/>
+                    <navigationItem key="navigationItem" id="0R5-md-Ujh"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ld-Wz-Ljj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815.20000000000005" y="148.87556221889056"/>
         </scene>
     </scenes>
 </document>
